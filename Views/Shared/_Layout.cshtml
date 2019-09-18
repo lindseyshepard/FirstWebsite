@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData[""]Lindsey Shepard</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Add social library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        li {
+            float: left;
+            position: sticky;
+            font-family: Garamond;
+        }
+
+            li a {
+                display: block;
+                color: #666;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-github {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body style="
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+">
+
+    <ul class="navbar-nav" style="i;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+        </li>
+
+        @*<li class="nav-item">
+                <a class="nav-link text-dark" href="/Home/Accomplishments">Accomplishments</a>
+            </li>*@
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/Home/Resume">Resume</a>
+        </li>
+
+        <li class="=nav-item">
+            <a href="https://www.linkedin.com/in/lindsey-shepard/" class="fa fa-linkedin" target="_blank"></a>
+        </li>
+
+        <li class="nav-item">
+            <a href="https://github.com/lindseyshepard1" class="fa fa-github" target="_blank"></a>
+    
+        </li>
+
+        <li class="nav-item">
+            <form action="mailto:lindsey.shepard@outlook.com" method="post" enctype="text/plain">
+                <input type="image" img="" src="/css/Image/outlookimg.png">
+            </form>
+        </li>
+
+    </ul>
+
+
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    </body>
+
+    <footer class="footer text-muted" style="
+    left: 0px;
+">
+        <style>
+            footer {
+                background: #868b8e;
+                display: block;
+                position: absolute;
+                bottom: 0;
+            }
+        </style>
+        <div class="" ,="" style="color: #ffffff">
+            <center>
+                2019 - Personal Page - Lindsey Shepard
+            </center>
+            <a href=""></a>
+        </div>
+
+    </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
