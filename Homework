@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!-- Big O -->
+<!--When I started my understand was that it was dependent on how may times you go through the data,
+    but what I misunderstood was depending on how you go through the data, depends on how the Big O
+    notation would be written. Before reading more on the topic I was not as clear on adding variables
+    such as O(a*b) or 0(N^2)
+
+    The Big O is how runtime scales to the input. A great example to explain this to me was watching a video that went over
+    a pigeon carrying a USB device. The Pigeon carrying the USB doesn't know how much data was on the USB it just flew
+    where it needed to go. However that isn't the case when it comes to data transfer. The internet transfer time O of N
+    scales within respect of the amount of input. (More data more time).
+    If you have an array O of N (The N would be the array)
+    Lets say you are irterating through the array with a post increment and a deincrement you would have O to N squared (If you
+    were using 2 for loops to go through this array. The same would go for it you were printing pairs in an array, foreach x and foreach y
+    you would be going through the array twice making it O(N^2)
+    There are 4 rules to go by when determining the O notation in your code.
+
+    1. Different steps get added together
+    2. Drop Constants
+    3. Different inputs will have different variables
+    4. Drop non-dominant terms
+
+
+
+    -->
+<!-- Explain what it means to break the page-->
+<!-- A page break code that is inserted to tell the printing device where the page is supposed to be broken. This will tell
+    the document how to behave when the image/page is broken
+    <p style="page-break-before: always"> has been inserted into resume page to break the page before the Education section
+
+    This is an important feature to know because when people view documents on different devices, it should not matter what
+    device they print a document from. The printer should always be able to print the pages the way they were intended to be
+    printed
+    -->
+<!-- pop and push methods -->
+<!-- This is how you add and remove elements in a stack. You "push" them into the stack and you "pop" them out. The proper syntax:
+
+Stack myStack = new Stack();
+myStack.Push(1);
+myStack.Push(2);
+myStack.Push(3);
+myStack.Push(4);
+myStack.Push(5);
+
+foreach (var item in myStack)
+Console.Write(item);
+
+    This would display:
+    5
+    4
+    3
+    2
+    1
+
+
+    If you were to "peek" the stack you woudl see the last element added in which would be 5
+        Console.WriteLine(myStack.Peek());
+        Console.WriteLine(myStack.Peek());
+        Console.WriteLine(myStack.Peek());
+        Console.WriteLine(myStack.Peek());
+
+    output: 5
+            5
+            5
+            5
+    
+   This is my understanding of how you would manipulate a stack!      -->
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData[""]Lindsey Shepard</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Add social library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: white;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        li {
+            float: left;
+            position: sticky;
+            font-family: Garamond;
+        }
+
+            li a {
+                display: block;
+                color: #666;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #4CAF50;
+                }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-github {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body style="
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+">
+
+
+
+
+    <ul class="navbar-nav" style=" ">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+        </li>
+
+        @*<li class="nav-item">
+                <a class="nav-link text-dark" href="/Home/Accomplishments">Accomplishments</a>
+            </li>*@
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/Home/Resume">Resume</a>
+        </li>
+
+        <li class="=nav-item">
+            <a href="https://www.linkedin.com/in/lindsey-shepard/" class="fa fa-linkedin" target="_blank"></a>
+        </li>
+
+        <li class="nav-item">
+            <a href="https://github.com/lindseyshepard" class="fa fa-github" target="_blank"></a>
+
+        </li>
+
+        <li class="nav-item">
+            <form action="mailto:lindsey.shepard@outlook.com" method="post" enctype="text/plain">
+                <input type="image" img="/" src="~/Image/outlookimg.png">
+            </form>
+        </li>
+
+    </ul>
+
+
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+
+<footer class="footer text-muted" style="
+    left: 0px;
+">
+    <style>
+        footer {
+            background: #868b8e;
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+    <div class="" ,="" style="color: #ffffff">
+        <center>
+            2019 - Personal Page - Lindsey Shepard
+        </center>
+        <a href=""></a>
+    </div>
+
+</footer>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@RenderSection("Scripts", required: false)
+
