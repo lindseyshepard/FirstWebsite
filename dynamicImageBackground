@@ -1,0 +1,123 @@
+Lines 14 to 23 is how I was able to change the focus of the background photo depending on device. I tried to do this in 
+JavaScript on another project. That will be my next personal challenge. If anyone see's a way I can make this better,
+cleaner in anyway please message me!
+
+-----------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lindsey Shepard</title>
+<head>
+    <style>
+
+        body {
+            height: initial;
+            background-image: url("../image/hikingwithpet.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-position-x: 60%;
+            background-position-y: 70%;
+            image-resolution: snap;
+            background-attachment: fixed;
+        }
+
+
+        .transbox {
+            background: rgba(255, 255, 255, 0.78);
+            font-size: 22px;
+            opacity: 1.0;
+            width: 80%;
+            margin: auto;
+            /*text-align: center;*/
+            padding: 14px 14px;
+        }
+
+        li.transbox {
+            text-align: left;
+            background-color: transparent;
+            padding-left: 18%;
+            border: none;
+            padding-right: 18%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="transbox">
+        <br><center>
+            <img src="/Image/linkedin.jpg">
+            <div style="text-align:center">
+                <h1>Lindsey Shepard</h1>
+                <h3> <i>A transitioning Marine finding her place, one concept at a time</i></h3>
+            </div>
+
+            <hr />
+            <br>
+            Hello, world! <br>
+            I want to tell you a little about me.
+            From my background picture you can see I like to explore. Now I am ready to explore the next step.
+            <br><br>
+            Mid 2019, I began a new chapter of my life by participating in Microsofts Software and Systems Academy
+            (<a href="https://military.microsoft.com/programs/microsoft-software-systems-academy/" target="_blank">MSSA</a>)
+            for Cloud Development. This was exciting and scary at the same time because I never explored software
+            development. Early 2019, I transitioned out of the United States Marine Corps. I found this opportunity to
+            enroll in the Microsoft Software and Systems Academy (MSSA) and my life changed. I discovered a new
+            challenge, but also found my passion: <b>innovation</b>
+            <br>
+            <br>
+            Innovation is a term used in the technology field and in our daily lives, but what exactly does it mean?<br>
+
+
+            New ideas immerge every day; in every area of day-to-day life and cannot be limited by today's data discovery.
+
+            Technology is not limited. There is a form of innovation at every
+            corner. New ideas are influencing retail, aviation, transportation, and even how we order our coffee. I have been asked, "Why Tech?"
+            The reasons are diverse, but my answer is simple: I want to join an industry full of passion, with intent to better the lives of everyone.
+            <br><br>
+
+
+
+            •	 I could develop an application that can save a working parent five minutes on a busy morning.
+            <br>
+            •    I could help a doctor or nurse work more efficiently with something I helped create.
+            <br>
+            •    I could implement security features in online banking software.
+
+
+            <br><br>
+            I realize these ideas are ambitious for someone so new to the industry, but my desire to learn, grow, and collaborate can get me there.
+            With my enthusiasm to innovate, I can have an impact in such a fast-paced industry. As a positive, optimistic individual, I am excited
+            to enter the technology field and work with other like-minded people.
+      
+
+            <br><br><br><hr>
+            
+            <b style="font-size:small">  Embry-Riddle Aeronautical University - Worldwide has partnered with Microsoft.</b><br>
+            <br>
+        <p style="font-size:small">
+            Offering an exciting new bridge between two great careers by educating transitioning
+            U.S. military personnel in the latest technologies through classroom, hybrid and project-based learning.
+            Learn more about Embry-Riddle Aeronautical University - Worldwide
+            and Microsoft Software and Systems Academy and what they offer to today's corporate world!<br><br>
+
+
+
+            <a href="https://worldwide.erau.edu/microsoft-software-systems-academy" target="_blank" style="font-size:small">Embry-Riddle Aeronautical University - Worldwide</a>
+
+            <br><br>
+            <a href="https://military.microsoft.com/programs/microsoft-software-systems-academy/" target="_blank" style="font-size:small">Microsoft Software and Systems Academy</a>
+            <br><br>
+            </p>
+
+            <div style="font-size:smaller">
+                Due to V1.0.1 (bugfixed) my original GitHub website is<a href="https://github.com/lindseyshepard1"> www.github.com/lindseyshepard1 </a>
+                <br><br>
+            </div>
+
+        </center>
+    </div>
+</body>
+
